@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.picture{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+header .burger{
+    text-align: center;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 349px;
+    width: 40px;
+    z-index: 2;
+    color: #C4C4C4;
+}
+
+header .burger .fa-bars{
+    font-size: 30px;
+}
+
+
+header ul{
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 586px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+header ul a{
+    padding: 24px 18px;
+    border-radius: 0px 35px;
+    background-color: #C4C4C4;
+    color: black;
+}
+header ul a:hover{
+    cursor: pointer;
+    background-color: #79B331;
+    color: #ffffff;
+}
+.animatedbox{
+    position: absolute;
+    top: 94px;
+    left: 858px;
+    z-index: 2;
+    text-align: center; 
+}
+.text{
+    text-align: center;
+    font-size: 18px
+}
+.clock{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.tree{
+    width: 1060px;
+    height: 500px;
+    position: absolute;
+    top: 525px;
+    left: 336px;
+    z-index: 2;
+    /* display: flex;
+    justify-content: space-between;
+    position: relative */
+}
+
+
+.stem{
+    width: 2px;
+    height: 430px;
+    background-color: #C4C4C4;
+    position: relative;
+    top: 70px;
+    left: 50%;
+}
+
+.conteiner{
+    width: 531px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.conteiner p{
+    width: 420px;
+    height: 48px;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.leaf{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: #C4C4C4;
+}
+
+.conteiner:hover .leaf{
+    cursor: pointer;
+    background-color: #79B331;
+}
+.conteiner:hover p{
+    cursor: pointer;
+    color: #79B331;
+}
+
+.second{
+    margin-top: 140px;
+    margin-left: 50%;
+}
+
+.third{
+    margin-top: 280px;
+}
+
+.forth{
+    margin-top: 420px;
+    margin-left: 50%;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+
+.ball{
+    width: 32px;
+    height: 32px;
+    margin-top: 94px;
+    border-radius: 50%;
+    background-color: #79B331;
+    position: relative;
+    animation: ballanimation 4s infinite;
+}
+@keyframes ballanimation {
+    0%{top:0;left: 0;}
+    25%{top:0;left: 320px;}
+    50%{top:156px;left: 320px;}
+    75%{top:156px;left: 0;}
+    100%{top:0;left: 0;}
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    header .burger{
+        display: none;
+    }
+
+    header ul{
+        margin-left: 150px;
+    }
+
+    .animatedbox{
+        left: 500px;
+    }
+
+    .tree{
+        left: 460px;
+        top: 800px;
+    }
+
+    .second, .forth, .media, .media3{
+        display: none;
+    }
+
+    .media4{
+        margin-top: 420px;
+        margin-left: 0%;
+    }
+    .media2{
+        margin-top: 140px;
+        margin-left: 0%;
+    }
+    .rotate{
+        transform: none;
+    }
+    .conteiner:hover .leaf{
+        cursor: pointer;
+        background-color: #79B331;
+    }
+    .conteiner:hover p{
+        cursor: pointer;
+        color: #79B331;
+    }
+ 
+
+}
+@media only screen and (min-width: 1025px) {
+    .media, .media2, .media3, .media4{
+        display: none;
+    }
+    header .burger{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    
+    header .burger{
+        display: block;
+    }
+
+    .tree{
+        width: 356px;
+        height: 574px;
+        top: 346px;
+        left: 0px;
+        z-index: 2;
+    }
+    
+    .conteiner{
+    width: 380px;
+    height: 574px;
+    margin-left: 0px;
+   }
+
+   .conteiner p{
+    font-size: 14px;
+    text-align: center;
+   }
+
+   .media{
+    margin-top: -20px;
+    text-align: center;
+    display: block;
+   }
+
+   .leaf{
+    margin-left: 170px;
+   }
+
+   .second{
+    margin-top: 130px;
+    display: block;
+    text-align: center;
+   }
+
+   .media3{
+    margin-top: 260px;
+    display: block;
+    text-align: center;
+   }
+
+   .forth{
+    margin-top: 390px;
+    display: block;
+    text-align: center;
+   }
+   
+    .first, .third, .media2, .stem, nav, .media4{
+        display: none;
+    }
+
+    .animatedbox{
+       top: 0px;
+       left: 42px;
+    }
+
+}
